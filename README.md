@@ -10,6 +10,8 @@
 Este é o backend é para atividade JSON-Server: Fake-API do início ao Deploy, que tem como objetivo criar uma API-fake, para criar um frontend de qualidade. 
 </p>
 
+O url base da API é https://user-api-kenzie.herokuapp.com/users
+
 <p align="center">
   <a href="#endpoints">Endpoints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
@@ -22,7 +24,7 @@ A API tem o total de 2 endspoints, sendo o principal de usuários (user).
 
 <h2 align ='center'> Listando usuários </h2>
 Para acessar a lista de usuários podemos acessar dessa forma: 
-`GET /user -  FORMATO DA RESPOSTA - STATUS 200`
+`GET /users -  FORMATO DA RESPOSTA - STATUS 200`
 ```json
 [
     {
@@ -35,7 +37,7 @@ Para acessar a lista de usuários podemos acessar dessa forma:
 ]
 ```
 
-Para acessar a lista de comentários podemos acessar dessa forma: 
+Para acessar a lista de comentários podemos acessar dessa forma, só usuários logados terão acesso a leitura: 
 `GET /comments -  FORMATO DA RESPOSTA - STATUS 200`
 ```json
 [
