@@ -37,7 +37,7 @@ Para acessar a lista de usuários podemos acessar dessa forma:
     }
 ]
 ```
-
+<h2 align ='center'> Listando comentários </h2>
 Para acessar a lista de comentários podemos acessar dessa forma, só usuários logados terão acesso a leitura: 
 `GET /comments -  FORMATO DA RESPOSTA - STATUS 200`
 
