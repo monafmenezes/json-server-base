@@ -25,6 +25,7 @@ A API tem o total de 2 endspoints, sendo o principal de usuários (user).
 <h2 align ='center'> Listando usuários </h2>
 Para acessar a lista de usuários podemos acessar dessa forma: 
 `GET /users -  FORMATO DA RESPOSTA - STATUS 200`
+
 ```json
 [
     {
@@ -39,6 +40,7 @@ Para acessar a lista de usuários podemos acessar dessa forma:
 
 Para acessar a lista de comentários podemos acessar dessa forma, só usuários logados terão acesso a leitura: 
 `GET /comments -  FORMATO DA RESPOSTA - STATUS 200`
+
 ```json
 [
     {
