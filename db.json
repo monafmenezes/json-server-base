@@ -7,5 +7,11 @@
       "age": 38,
       "id": 1
     }
+  ], 
+
+  "comments": [
+    {
+      "userId": 1, 
+      "comment": "olá" }
   ]
 }

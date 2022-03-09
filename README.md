@@ -1,24 +1,48 @@
-# json-server-base
+<h1 align="center">
+  <img alt="KenzieHub" title="KenzieHub" src="https://kenzie.com.br/images/logoblue.svg" width="100px" />
+</h1>
 
-Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Capstones do Q2.
+<h1 align="center">
+  User - API
+</h1>
 
-## Endpoints
+<p align = "center">
+Este é o backend é para atividade JSON-Server: Fake-API do início ao Deploy, que tem como objetivo criar uma API-fake, para criar um frontend de qualidade. 
+</p>
 
-Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/package/json-server-auth), existem 3 endpoints que podem ser utilizados para cadastro e 2 endpoints que podem ser usados para login.
+<p align="center">
+  <a href="#endpoints">Endpoints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
 
-### Cadastro
+## **Endpoints**
 
-POST /register <br/>
-POST /signup <br/>
-POST /users
+A API tem o total de 2 endspoints, sendo o principal de usuários (user).
 
-Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
-Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
+## Rotas que não precisam de autenticação
 
+<h2 align ='center'> Listando usuários </h2>
+Para acessar a lista de usuários podemos acessar dessa forma: 
+`GET /user -  FORMATO DA RESPOSTA - STATUS 200`
+```json
+[
+    {
+    "email": "kenzinho@mail.com",
+    "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
+    "name": "Kenzinho",
+    "age": 38,
+    "id": 1
+    }
+]
+```
 
-### Login
+Para acessar a lista de comentários podemos acessar dessa forma: 
+`GET /comments -  FORMATO DA RESPOSTA - STATUS 200`
+```json
+[
+    {
+    "userId": 1,
+    "comment": "olá"
+    }
+]
+```
 
-POST /login <br/>
-POST /signin
-
-Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
